@@ -6,11 +6,21 @@ function App() {
   let [counter, setCounter] = useState(0); 
   const addValue = ()=>{
     counter = counter + 1;
-    setCounter(counter);
+    if(counter > 20){
+      setCounter("Can't Increase");
+    }else{
+      setCounter(counter);
+    }
+    
   }
   const reduceValue = ()=>{
     counter = counter -1;
-    setCounter(counter);
+    if(counter < 0){
+      setCounter("counter cannot be negative");
+    }else{
+      setCounter(counter);
+    }
+    
   }
   return (
     <>
