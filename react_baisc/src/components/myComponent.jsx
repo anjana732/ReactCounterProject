@@ -4,6 +4,7 @@ function Card(){
     return(
         <>
             <h1>This is my componenet</h1>
+            
         </>
     );
 }
